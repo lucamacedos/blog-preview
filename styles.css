@@ -17,11 +17,62 @@ body {
     align-items: center;
 }
 
-.container {
-    width: 336px;
+.card {
+    max-width: 336px;
     background-color: #fff;
+    margin: 0px 20px;
     padding: 23px;
     border-radius: 15px;
     border: 1px solid hsl(0, 0%, 7%);
     box-shadow: 10px 10px hsl(0, 0%, 7%);
+}
+
+.card > img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card .card-type {
+    background-color: hsl(47, 88%, 63%);
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.card .card-date {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card .card-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.card .card-descrition {
+    color: hsl(0, 0%, 42%);
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px
+}
+
+.card-credits {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-credits > img {
+    width: 32px;
+    height: 32px;
+}
+
+.card-credits .card-autor {
+    font-size: 16px;
+    font-weight: 900;
 }
