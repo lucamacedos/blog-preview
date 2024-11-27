@@ -7,17 +7,16 @@
 
 body {
     font-family: "Roboto", serif;
-}
-
-.container-bg {
     height: 100vh;
     background-color: hsl(47, 88%, 63%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
-.card {
+.card-container {
     max-width: 336px;
     background-color: #fff;
     margin: 0px 20px;
@@ -27,13 +26,13 @@ body {
     box-shadow: 10px 10px hsl(0, 0%, 7%);
 }
 
-.card > img {
+.card-container > img {
     max-width: 100%;
     border-radius: 15px;
     margin-bottom: 20px;
 }
 
-.card .card-type {
+.card-container .card-type {
     background-color: hsl(47, 88%, 63%);
     display: inline-block;
     padding: 8px 12px;
@@ -42,37 +41,37 @@ body {
     margin-bottom: 15px;
 }
 
-.card .card-date {
+.card-container .card-date {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
 }
 
-.card .card-title {
+.card-container .card-title {
     font-size: 24px;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
-.card .card-descrition {
+.card-container .card-descrition {
     color: hsl(0, 0%, 42%);
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 20px
 }
 
-.card-credits {
+.card-container .card-credits {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.card-credits > img {
+.card-container .card-credits > img {
     width: 32px;
     height: 32px;
 }
 
-.card-credits .card-autor {
+.card-container .card-credits .card-autor {
     font-size: 16px;
     font-weight: 900;
 }
